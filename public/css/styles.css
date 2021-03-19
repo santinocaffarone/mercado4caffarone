@@ -1,8 +1,33 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color:  #EAC926;
+* {
+    box-sizing: border-box;
 }
 
+body {
+    
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background-color:  #EAC926;
+}
+main {
+    background-color: #ebebeb;
+    width: 90%;
+    align-content: center;
+}
+
+main   article {
+    margin-bottom: 10px;
+}
+
+
+.nav1 {
+    margin-bottom: 30px;
+    line-height: 10px;
+}
+
+.compra {
+    text-align: center;
+}
 
 p {
     font-size: 12px;
@@ -18,21 +43,23 @@ p {
 .desc {
     font-size: 16px;
 }
+
 .barra {
-  background-color: white;  
+    background-color: white;
   color: grey;
 }
 
 .burger-menu {
     text-align: center;
+    size: 50px;
 }
 
 .burger-menu i {
     background-color:#1259c3;
     color: white;
-    height: 20px;
+    height: 25px;
     width: 30px;
-   
+    margin-bottom: 15px;
 }
 
 footer {
@@ -40,7 +67,7 @@ footer {
 }
 footer h3{
     text-align: center;
-    font-weight: 15000;
+    font-weight: 900;
 }
 
 footer p {
@@ -52,9 +79,11 @@ footer i {
     color: #1259c3;
     align-items: center;
     align-content: center;
-    
 }
 
-.fasfa-credit-card {
-    align-content: center;
+footer i {
+   margin-bottom: 10px;
+   font-size: 2em;
+   text-align: center; 
+   width: 100%; 
 }

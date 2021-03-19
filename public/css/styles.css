@@ -1,0 +1,60 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:  #EAC926;
+}
+
+
+p {
+    font-size: 12px;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+}
+.desc {
+    font-size: 16px;
+}
+.barra {
+  background-color: white;  
+  color: grey;
+}
+
+.burger-menu {
+    text-align: center;
+}
+
+.burger-menu i {
+    background-color:#1259c3;
+    color: white;
+    height: 20px;
+    width: 30px;
+   
+}
+
+footer {
+    background-color: white; 
+}
+footer h3{
+    text-align: center;
+    font-weight: 15000;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer i {
+    display: inline-block;
+    color: #1259c3;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.fasfa-credit-card {
+    align-content: center;
+}

@@ -1,0 +1,71 @@
+/* estilos generales*/
+
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #EAC926;
+}
+header img {
+    width: 50%;
+    max-width: 300px;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb; 
+    
+}
+
+.form {
+    padding: 20px 15px;
+    
+}
+
+.controlForm {
+    margin-bottom: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.controlForm label{
+    margin-bottom: 10px;
+}
+
+.controlForm input{
+    border: none;
+    border-radius: 3px;
+    height: 25px;
+    padding: 5px;
+    width: 90vw;
+    max-width: 700px;
+    
+}
+
+.controlForm button {
+    background-color: #1259c3;
+    color: white;
+    border: solid 2px  #1259c3;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 5px 10px;
+}
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fotoUsuario {
+    margin-top: 15px;
+}
+
+.categorias div{
+    margin-left: 25px;
+}

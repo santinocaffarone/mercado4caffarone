@@ -17,14 +17,18 @@
     <header class="main-header">
         <div class="main-header-top-bar">
             <img class= "main-logo" src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
-
-            <span class="barra">Buscar productos, marcas<i class="fas fa-search"></i></span>
+           
+            <form action="" class="buscar"> 
+                <input type="text" name="buscar" id="buscar" placeholder="Buscar productos y marcas" >
+                <i class="fas fa-search"></i>
+            </form>
+            
             <br>
 
             <p class="compra">
 
                 <i class="fas fa-hand-holding-usd">
-                </i>Comprá en cuotas y sin tarjeta de crédito
+                </i>  Comprá en cuotas y sin tarjeta de crédito
             </p>
         </div>
         <div class="main-nav-bar">
@@ -37,12 +41,12 @@
                 </ul>
 
             </nav>
-
+            
             <nav class="nav1">
                 <ul type="none">
-                    <li><a>Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a>Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a>Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                    <li><a href="/register/">Creá tu cuenta    <i class="far fa-id-card"></i></a></li>
+                    <li><a href="/login/">Ingresá   <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a>Mis compras   <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -65,7 +69,7 @@
                         <p class="precios">$6.770</p>
                         <p class="desc">40% off</p>
                     </div>
-                    <h4 class="desc-art">Cafetera Moulinex</h4>
+                    <h4 class="desc-art" id="descrip">Cafetera Moulinex</h4>
                 </div>
             </article>
 
@@ -160,7 +164,7 @@
     <footer>
         <section>
             <article>
-                <i class="fas fa-credit-card"></i>
+                <i class="fas fa-credit-card" id="FotIcon"></i>
                 <h3>Pagá con tarjeta o en efectivo</h3>
                 <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
                     siempre es
@@ -169,7 +173,7 @@
         </section>
         <section>
             <article>
-                <i class="fas fa-gift"></i>
+                <i class="fas fa-gift" id="FotIcon"></i>
                 <h3>Envío gratis desde $2.500</h3>
                 <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                     productos. Es un beneficio de Mercado Puntos.</p>
@@ -177,7 +181,7 @@
         </section>
         <section>
             <article>
-                <i class="fas fa-user-shield"></i>
+                <i class="fas fa-user-shield"id="FotIcon"></i>
                 <h3>Seguridad, de principio a fin</h3>
                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                     porque estás siempre protegid@.</p>

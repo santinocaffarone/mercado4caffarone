@@ -19,13 +19,24 @@ p {font-size: 12px;}
 .titulares {font-size: 24px;}
 .precios {font-size: 18px;}
 .desc {font-size: 16px;}
-.desc-art {font-size: 16px;}
-.banner { width: 100%;}
+
+main article h4 {
+    font-size: 16px;
+    color: white;
+}
+main article div :hover {
+
+    color: black
+   
+}
+
+.banner { width: 100%; }
 
 .main-header {
     background-color:  #EAC926;
     padding: 20px;
 }
+
 
 main {
     background-color: #ebebeb;
@@ -53,9 +64,7 @@ main article {
 
 
 
-.desc-art {
-    display: none;
-}
+
 
 header ul {
     display: none;
@@ -87,15 +96,43 @@ main img {
     margin-bottom: 30px;
     line-height: 10px;
 }
+.nav1 li {
+    text-decoration: underline;
+}
+.nav1 li :visited{
+    text-decoration: none ;
+    color: black;
+}
 .compra {
     text-align: center;
     font-size: 19px;
 }
 
-.barra {
+.buscar {
+    
+    display: flex;
+    position: relative;
+
+}
+
+.buscar input {
     background-color: white;
   color: grey;
+  border-radius: 6px;
+  padding: 7px;
+  width: 220px;
+  border: none
 }
+.buscar i {
+    position: absolute;
+    left: 180px;
+    top: 6px;
+    color: grey;
+}
+
+
+
+
 
 .burger-menu {
     text-align: center;
@@ -119,6 +156,7 @@ main img {
 
 footer {
     background-color: white; 
+
 }
 footer h3{
     text-align: center;
@@ -134,13 +172,18 @@ footer i {
     color: #1259c3;
     align-items: center;
     align-content: center;
-}
-
-footer i {
-   margin-bottom: 10px;
+    margin-bottom: 10px;
    font-size: 2em;
    text-align: center; 
    width: 100%; 
+}
+
+ footer :hover #FotIcon {
+   color: #39b54a;
+   
+}
+footer h5 {
+    padding: 8px;
 }
 
 /* instrucciones M04C05*/
@@ -183,16 +226,50 @@ main img {
 .main-logo {
     width: 50%;
     max-width: 380px;
-}
-.barra {
-    width: 50%;
-    max-width: 230px;
+    
 }
 
+
+   
+
+/* instrucciones M04C06*/
+.controlFormulario {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.controlFormulario input {
+    border: none;
+    border-radius: 3px;
+    height: 25px;
+    padding: 5px;
+    width: 70vw;
+    max-width: 500px;
+}
+.controlFormulario button  {
+    background-color: #1259c3;
+    color: white;
+    border: solid 2px  #1259c3;
+    border-radius: 3px;
+    padding: 3px;
+    width: 70vw;
+    max-width: 500px;
+}
+
+
+#botFor :hover {
+    background-color: #0022AA;
+    border: #0022AA solid 2px;
+}
+
+
+
+
 @media (min-width: 361px){
-   .desc-art {
-       display: block;
-   }
+   
     .descrip {
         box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
     }
@@ -251,5 +328,14 @@ main img {
     }
     main article {
         max-width: 22vw
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    footer section {
+        max-width: 380px;
     }
 }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/css/register.css' />
+    <title>Registro</title>
+</head>
+
+<body>
+    <header>
+        <img class= "main-logo" src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+    </header>
+    <form action="" method="POST" class="form">
+        <div class="controlForm">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+        </div>
+        <div class="controlForm">
+            <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuario">
+        </div>
+        <div class="controlForm">
+            <input type="email" name="email" placeholder="E-mail">
+        </div>
+        <div class="controlForm">
+            <label for="fechaNac">Fecha de nacimiento</label>
+        </div>
+        <div class="controlForm">
+            <input type="date" name="fecha">
+        </div>
+        <div class="controlForm">
+            <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+        </div>
+        <div class="controlForm">
+            <label for="perfil">Perfil de usuario</label>
+            <div>
+                <select name="perfil" id="perfil">
+                    <option value="comprador">Comprador</option>
+                    <option value="vendedor">Vendedor</option>
+                </select>
+            </div>
+        </div>
+        <div class="categorias">
+            <label for="">Categorías de interés:</label>
+            <div>
+                <input type="checkbox" name="interes" value="Electro">
+                <label for="interes">Electro</label>
+            </div>
+            <div>
+                <input type="checkbox" name="interes">
+                <label for="interes">Moda</label>
+            </div>
+            <div>
+                <input type="checkbox" name="interes">
+                <label for="interes">Hogar</label>
+            </div>
+            <div>
+                <input type="checkbox" name="interes">
+                <label for="interes">Juguetería</label>
+            </div>
+            <div>
+                <input type="checkbox" name="interes">
+                <label for="interes">Vida sana</label>
+            </div>
+        </div>
+        <div class="controlForm">
+            <label for="" class="fotoUsuario">Foto de usuario:</label>
+        </div>
+        <div class="controlForm">
+            
+            <input type="file" name="avatar" accept=".jpg">
+        </div>
+        <div class="controlForm">
+            <input type="password" name="contrasena" placeholder="Contraseña">
+        </div>
+        <div class="controlForm">
+            <input type="password" name="contrasenaRep" placeholder="Confirmar contraseña">
+        </div>
+        <div class="controlForm">
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>

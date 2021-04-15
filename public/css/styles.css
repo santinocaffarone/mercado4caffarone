@@ -1,5 +1,13 @@
 /* estilos generales*/
 
+/*Paleta de colores 
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
+
 *{
     margin: 0px;
     padding: 0px;    
@@ -20,13 +28,23 @@ p {font-size: 12px;}
 .precios {font-size: 18px;}
 .desc {font-size: 16px;}
 
-main article h4 {
-    font-size: 16px;
-    color: white;
-}
 
+/*
 main article div :hover {
     color: black;
+}
+*/
+main article h4 {
+    font-size: 16px;
+    color: #FFF;
+}
+
+
+.ultima-visita :hover .desc-art, .ofertas :hover .desc-art {
+    color: black;
+}
+main img , main .descrip{
+    border-radius: 10px;
 }
 
 .banner { width: 100%; }
@@ -61,10 +79,6 @@ main article {
 }
 
 
-
-
-
-
 header ul {
     display: none;
 }
@@ -87,6 +101,7 @@ main img {
     width: 100%
 }
 
+
 .desc {
     color: #39b54a;
 }
@@ -95,10 +110,11 @@ main img {
     margin-bottom: 30px;
     line-height: 10px;
 }
-.nav1 li {
-    text-decoration: underline;
+.nav1 li a {
+    text-decoration: none;
+    color: black;
 }
-.nav1 li :visited{
+.nav1 a :visited{
     text-decoration: none ;
     color: black;
 }
@@ -153,13 +169,25 @@ main img {
 
 /* footer*/
 
-footer {
+footer  {
     background-color: white; 
-
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+footer article {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
 footer h3{
     text-align: center;
     font-weight: 900;
+    width: 90vw;
 }
 
 footer p {
@@ -167,14 +195,14 @@ footer p {
 }
 
 footer i {
-    display: inline-block;
+   /* display: inline-block; */
     color: #1259c3;
     align-items: center;
     align-content: center;
     margin-bottom: 10px;
    font-size: 2em;
    text-align: center; 
-   width: 100%; 
+   display: inline-block;
 }
 
  footer :hover #FotIcon {
@@ -182,14 +210,13 @@ footer i {
    
 }
 footer h5 {
+    
     padding: 8px;
 }
 
 /* instrucciones M04C05*/
 
-main img {
-    max-width: 100%;
-}
+
 
 .precio-descuento {
     display: flex;
@@ -223,7 +250,7 @@ main img {
 }
 
 .main-logo {
-    width: 50%;
+    width: 50vw;
     max-width: 380px;
     
 }
@@ -264,6 +291,56 @@ main img {
     border: #0022AA solid 2px;
 }
 
+/* register*/
+.form {
+    padding: 20px 15px;
+    
+}
+
+.controlForm {
+    margin-bottom: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.controlForm label{
+    margin-bottom: 10px;
+}
+
+.controlForm input{
+    border: none;
+    border-radius: 3px;
+    height: 25px;
+    padding: 5px;
+    width: 90vw;
+    max-width: 700px;
+    
+}
+
+.controlForm button {
+    background-color: #1259c3;
+    color: white;
+    border: solid 2px  #1259c3;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 5px 10px;
+}
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fotoUsuario {
+    margin-top: 15px;
+}
+
+.categorias div{
+    margin-left: 25px;
+}
+
 
 
 
@@ -272,14 +349,9 @@ main img {
     .descrip {
         box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
     }
-    header ul {
-        display: block;
-    }
-    .burger-menu {
-        display: none;
-    }
+
     article {
-        max-width: 100vw
+        max-width: 80vw
     }
 }
 
@@ -288,6 +360,9 @@ main img {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .burger-menu {
+        display: none;
     }
     .compra {
         max-width: 350px;
@@ -305,7 +380,7 @@ main img {
         margin: 0 7px;
     }
     main article {
-        max-width: 45vw
+        max-width: 42vw
     }
 }
 
@@ -332,9 +407,8 @@ main img {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        
     }
     footer section {
-        max-width: 380px;
+        max-width: 28vw;
     }
 }
